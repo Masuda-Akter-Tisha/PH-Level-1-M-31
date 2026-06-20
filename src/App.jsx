@@ -4,8 +4,13 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 
+import ToDo from './Todo.jsx';
+import Amol from './Amol.jsx'
+
 function App() {
   const [count, setCount] = useState(0)
+
+  const time = 50;
 
   return (
       <section id="center">
@@ -23,7 +28,8 @@ function App() {
           <Person></Person>
           <Sports></Sports>
           <React></React> */}
-          <Student name = 'Hablu' dep = 'Science'></Student>
+
+          {/* <Student name = 'Hablu' dep = 'Science'></Student>
           <Student name = 'Kablu' dep = 'Biology'></Student>
           <Student name = 'Lablu' dep = 'CSE'></Student>
           <Person></Person>
@@ -35,8 +41,32 @@ function App() {
           <Player name = 'Jharo' run = '5000'></Player>
           <Player name = 'Maro' run = '5000'></Player>
 
-          <Salami salami = 'Roja Eid' tk = '20'></Salami>
-          <Salami salami = 'Graduation'></Salami>
+          <Salami salami = 'Roja Eid' tk = {20}></Salami>
+          <Salami salami = 'Graduation'></Salami> */}
+
+          {/* <ToDo
+           task = 'Learn React' 
+           isDone = {true} 
+           time = {time}></ToDo>
+          <ToDo 
+          task = 'Revise JS' 
+          isDone = {false}></ToDo>
+          <ToDo 
+          task = 'Take a shower' 
+          isDone = {true} 
+          time = {100}></ToDo> */}
+
+          <Amol
+           amol = 'Sura-Yeasin' 
+           isDone = {true}></Amol>
+
+          <Amol 
+          amol = 'Quran Khotom' 
+          isDone = {false}></Amol>
+          
+          <Amol 
+          amol = 'Start Namaz' 
+          isDone = {true}></Amol>
           
         </div>
       </section>
