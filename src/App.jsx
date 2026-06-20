@@ -44,7 +44,7 @@ function App() {
           <Salami salami = 'Roja Eid' tk = {20}></Salami>
           <Salami salami = 'Graduation'></Salami> */}
 
-          {/* <ToDo
+          <ToDo
            task = 'Learn React' 
            isDone = {true} 
            time = {time}></ToDo>
@@ -54,20 +54,20 @@ function App() {
           <ToDo 
           task = 'Take a shower' 
           isDone = {true} 
-          time = {100}></ToDo> */}
+          time = {50}></ToDo>
 
-          <Amol
+          {/* <Amol
            amol = 'Sura-Yeasin' 
            isDone = {true}></Amol>
 
           <Amol 
           amol = 'Quran Khotom' 
           isDone = {false}></Amol>
-          
+
           <Amol 
           amol = 'Start Namaz' 
           isDone = {true}></Amol>
-          
+           */}
         </div>
       </section>
   )
