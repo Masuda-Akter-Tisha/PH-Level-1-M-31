@@ -5,12 +5,21 @@ import heroImg from './assets/hero.png'
 import './App.css'
 
 import ToDo from './Todo.jsx';
-import Amol from './Amol.jsx'
+import Amol from './Amol.jsx';
+import Flower from './flower.jsx';
+import Employee from './flower.jsx';
 
 function App() {
   const [count, setCount] = useState(0)
 
-  const time = 50;
+  // const time = 50;
+  const flowers = ['sunflower', 'lily', 'marigold', 'rose', 'chandramollika'];
+  const employees = [
+    {id: 1, name:'hablu', age:25, job:'web-developer'},
+    {id: 2, name:'lablu', age:22, job:'js-developer'},
+    {id: 3, name:'ghaplu', age:21, job:'react-developer'}
+  ]
+  
 
   return (
       <section id="center">
@@ -44,7 +53,7 @@ function App() {
           <Salami salami = 'Roja Eid' tk = {20}></Salami>
           <Salami salami = 'Graduation'></Salami> */}
 
-          <ToDo
+          {/* <ToDo
            task = 'Learn React' 
            isDone = {true} 
            time = {time}></ToDo>
@@ -54,7 +63,7 @@ function App() {
           <ToDo 
           task = 'Take a shower' 
           isDone = {true} 
-          time = {50}></ToDo>
+          time = {50}></ToDo> */}
 
           {/* <Amol
            amol = 'Sura-Yeasin' 
@@ -68,6 +77,9 @@ function App() {
           amol = 'Start Namaz' 
           isDone = {true}></Amol>
            */}
+
+           {/* {flowers.map (flower => <Flower flower = {flower}></Flower>)} */}
+           {employees.map (employee => <Employee key = {employee.id} employee = {employee}></Employee>)}
         </div>
       </section>
   )
