@@ -4,22 +4,30 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 
-import ToDo from './Todo.jsx';
-import Amol from './Amol.jsx';
-import Flower from './flower.jsx';
-import Employee from './flower.jsx';
+import ToDo from './Todo';
+import Amol from './Amol';
+import Flower from './flower';
+import Employee from './flower';
+import Library from './Library';
 
 function App() {
   const [count, setCount] = useState(0)
 
   // const time = 50;
-  const flowers = ['sunflower', 'lily', 'marigold', 'rose', 'chandramollika'];
-  const employees = [
-    {id: 1, name:'hablu', age:25, job:'web-developer'},
-    {id: 2, name:'lablu', age:22, job:'js-developer'},
-    {id: 3, name:'ghaplu', age:21, job:'react-developer'}
-  ]
+  // const flowers = ['sunflower', 'lily', 'marigold', 'rose', 'chandramollika'];
+  // const employees = [
+  //   {id: 1, name:'hablu', age:25, job:'web-developer'},
+  //   {id: 2, name:'lablu', age:22, job:'js-developer'},
+  //   {id: 3, name:'ghaplu', age:21, job:'react-developer'}
+  // ]
   
+  const books = [
+    {id: 1, name: 'physics', price: 300},
+    {id: 2, name: 'Chemisrty', price: 300},
+    {id: 3, name: 'Biology', price: 300},
+    {id: 4, name: 'Math', price: 300},
+    {id: 5, name: 'Higher Math', price: 300}
+  ]
 
   return (
       <section id="center">
@@ -79,7 +87,10 @@ function App() {
            */}
 
            {/* {flowers.map (flower => <Flower flower = {flower}></Flower>)} */}
-           {employees.map (employee => <Employee key = {employee.id} employee = {employee}></Employee>)}
+           {/* {employees.map (employee => <Employee key = {employee.id} employee = {employee}></Employee>)} */}
+           
+           <Library books = {books}></Library>
+
         </div>
       </section>
   )

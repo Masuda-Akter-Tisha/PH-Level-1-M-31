@@ -194,7 +194,7 @@
   font-style: italic;
 }
 
-.salamiStyle, .employee {
+.salamiStyle, .employee, .book {
   color: black;
   border: 2px solid gray;
   padding: 20px;
@@ -203,4 +203,5 @@
   margin-top: 30px;
   background-color: peachpuff;
   font-style: italic;
+  list-style: none;
 }
